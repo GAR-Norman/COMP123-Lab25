@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Tom Tsiliopoulos
+ * Name: Gabriel Norman
  * Date: July 27, 2017
  * Description: This is the abstract superclass CardList
- * Version: 0.1 - Created the CardList abstract class
+ * Version: 0.1
  */
 
 namespace COMP123_S2017_Lesson11B

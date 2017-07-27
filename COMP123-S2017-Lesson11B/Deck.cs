@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Tom Tsiliopoulos
- * Date: July 25, 2017
+ * Name: Gabriel Norman
+ * Date: July 27, 2017
  * Description: This is the Deck class
  * It inherits from the CardList Abstract class
- * Version: 0.6 - Added the Deal1 method
+ * Version: 0.1
  */
 
 namespace COMP123_S2017_Lesson11B
@@ -103,9 +103,25 @@ namespace COMP123_S2017_Lesson11B
             this.RemoveAt(0); // this removes the top card from the deck
 
             // for testing / debugging only
-            Console.WriteLine("Dealt 1 card - Size of Deck: " + this.Count);
+            //Console.WriteLine("Dealt 1 card - Size of Deck: " + this.Count);
 
             return topCard;
+        }
+
+/// <summary>
+/// This method returns a list of the top 5 cards drawn
+/// </summary>
+/// <returns></returns>
+        public Hand Deal5()
+        {
+            Hand top5Cards = new Hand();
+
+            for (int i = 0; i < 5; i++)
+            {
+                top5Cards.Add(Deal1());
+            }
+
+            return top5Cards;
         }
     }
 }

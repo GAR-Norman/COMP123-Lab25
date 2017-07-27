@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Tom Tsiliopoulos
- * Date: July 25, 2017
+ * Name: Gabriel Norman
+ * Date: July 27, 2017
  * Description: This is the Card Class
- * Version: 0.3 - Added the OverWrite method
+ * Version: 0.1
  */
 
 namespace COMP123_S2017_Lesson11B

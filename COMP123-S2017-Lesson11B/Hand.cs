@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 /*
- * Name: Tom Tsiliopoulos
+ * Name: Gabriel Norman
  * Date: July 27, 2017
  * Description: This is the Hand class
  * It inherits from the CardList Abstract class
@@ -28,7 +28,37 @@ namespace COMP123_S2017_Lesson11B
            // this method is empty
         }
 
-        // PUBLIC METHODS
+    
+        // PUBLIC METHODS 
+
+            /// <summary>
+            /// This method returns the highest hand.
+            /// </summary>
+            /// <returns></returns>
+            public static void HighestCard(Hand hand)
+        {
+
+            Card theHighest = new Card((Face)0, (Suit)1);
+
+            for (int i = 0; i < 5; i++)
+            {
+                if(hand[i].Face > theHighest.Face)
+                {
+                    theHighest = hand[i];
+                }
+            }
+
+
+
+            var theHighestCard = from HighCrd in hand where HighCrd.Face == theHighest.Face select HighCrd;
+
+            foreach (var item in theHighestCard)
+            {
+                Console.WriteLine("The highest card in the hand is the {0} of {1}", item.Face, item.Suit);
+            }
+
+            
+        }
 
         /// <summary>
         /// This method overrides the built-in ToString method.

@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
- * Name: Tom Tsiliopoulos
- * Date: July 25, 2017
- * Description: This is a demo for Lesson 11
- * Version: 0.4 - Tested the new Deck class
+ * Name: Gabriel Norman
+ * Date: July 27, 2017
+ * Description: This is the driver class
+ * Version: 0.1 - Tested the new Deck class
  */
 
 namespace COMP123_S2017_Lesson11B
@@ -35,7 +35,20 @@ namespace COMP123_S2017_Lesson11B
             Console.WriteLine();
             Console.WriteLine(deck.ToString());
 
-            //hand = deck.Deal5(); // moves the top 5 cards from the deck to the hand object
+            // Testing the deal 5 method using the hand object!
+            Hand hand2 = new Hand();
+
+            hand2 = deck.Deal5();
+            Console.WriteLine(hand2);
+
+
+            //Testing the highest card method!
+           Hand.HighestCard(hand2);
+          
+            
+
+
+
         }
     }
 }
