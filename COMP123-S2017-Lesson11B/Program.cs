@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Name: Gabriel Norman
  * Date: July 27, 2017
  * Description: This is the driver class
- * Version: 0.1 - Tested the new Deck class
+    * Version: 0.2 - Commented out the unneccessay test harness code so the console output is easier to read; 
  */
 
 namespace COMP123_S2017_Lesson11B
@@ -20,21 +20,23 @@ namespace COMP123_S2017_Lesson11B
             Deck deck = new Deck();
             Hand hand = new Hand();
 
-            Console.WriteLine(deck.ToString());
-            Console.WriteLine();
+           // Console.WriteLine(deck.ToString());
+            //Console.WriteLine();
             deck.Shuffle();
-            Console.WriteLine("Shuffled");
-            Console.WriteLine(deck.ToString());
+           // Console.WriteLine("Shuffled");
+           // Console.WriteLine(deck.ToString());
 
-            hand.Add(deck.Deal1());
-            Console.WriteLine(hand.ToString());
-            Console.WriteLine();
-            hand.Add(deck.Deal1());
-            Console.WriteLine(hand.ToString());
+            //hand.Add(deck.Deal1());
+           // Console.WriteLine(hand.ToString());
+           // Console.WriteLine();
+           // hand.Add(deck.Deal1());
+            //Console.WriteLine(hand.ToString());
 
-            Console.WriteLine();
-            Console.WriteLine(deck.ToString());
+           // Console.WriteLine();
+            //Console.WriteLine(deck.ToString());                 //The Test Harness relevent to this lab begins below!
 
+           
+            
             // Testing the deal 5 method using the hand object!
             Hand hand2 = new Hand();
 
